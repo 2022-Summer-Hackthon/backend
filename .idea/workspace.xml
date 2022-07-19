@@ -4,10 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c55ef60f-151e-4eac-85e9-4cb94a5822dc" name="Changes" comment="bean 설정">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/global/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/global/exception/ExceptionResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/global/handler/ExceptionAdvice.java" afterDir="false" />
+    <list default="true" id="c55ef60f-151e-4eac-85e9-4cb94a5822dc" name="Changes" comment="예외처리 설정">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/entity/Carrier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/entity/Paper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/exception/PaperNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/exception/PaperPreparingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/presentation/PaperController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/presentation/dto/request/PaperDraftRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/presentation/dto/response/CarrierResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/presentation/dto/response/DraftNumberResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/presentation/dto/response/PaperDraftResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/repository/CarrierRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/repository/PaperRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/service/PaperService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/service/PaperServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/type/CarrierCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/type/JobCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/scraper/service/ScraperService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/scraper/service/ScraperServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dgsw/hackathon/PaperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,19 +73,44 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/minie/IdeaProjects/backend/src/main/java/com/dgsw/hackathon/global/exception"
+    "last_opened_file_path": "/home/minie/IdeaProjects/backend/src/main/java/com/dgsw/hackathon/domain"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain" />
       <recent name="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/global/exception" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dgsw.hackathon" />
       <recent name="com.dgsw.hackathon.global.handler" />
       <recent name="com.dgsw.hackathon.global.properties" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.HackathonApplication">
+    <configuration name="PaperTest.testGithub" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.dgsw.hackathon.PaperTest.testGithub&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="HackathonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="hackathon.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dgsw.hackathon.HackathonApplication" />
@@ -75,6 +118,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.PaperTest.testGithub" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -85,7 +133,7 @@
       <option name="presentableId" value="Default" />
       <updated>1658190606014</updated>
       <workItem from="1658190608110" duration="80000" />
-      <workItem from="1658190782842" duration="704000" />
+      <workItem from="1658190782842" duration="2723000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 설정">
       <created>1658190913645</created>
@@ -108,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658191429596</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="예외처리 설정">
+      <created>1658191703733</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658191703733</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,7 +174,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -128,6 +195,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="프로젝트 설정" />
     <MESSAGE value="bean 설정" />
-    <option name="LAST_COMMIT_MESSAGE" value="bean 설정" />
+    <MESSAGE value="예외처리 설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="예외처리 설정" />
   </component>
 </project>

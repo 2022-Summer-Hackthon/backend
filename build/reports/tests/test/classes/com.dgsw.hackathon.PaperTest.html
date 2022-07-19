@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PaperTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PaperTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.dgsw.hackathon.html">com.dgsw.hackathon</a> &gt; PaperTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">9.278s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testGithub()</td>
+<td class="success">9.278s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>09:53:38.974 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+09:53:38.987 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+09:53:39.014 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.dgsw.hackathon.PaperTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+09:53:39.029 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.dgsw.hackathon.PaperTest], using SpringBootContextLoader
+09:53:39.033 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dgsw.hackathon.PaperTest]: class path resource [com/dgsw/hackathon/PaperTest-context.xml] does not exist
+09:53:39.035 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dgsw.hackathon.PaperTest]: class path resource [com/dgsw/hackathon/PaperTestContext.groovy] does not exist
+09:53:39.035 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.dgsw.hackathon.PaperTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+09:53:39.036 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.dgsw.hackathon.PaperTest]: PaperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:53:39.097 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.dgsw.hackathon.PaperTest]
+09:53:39.158 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/minie/IdeaProjects/backend/build/classes/java/main/com/dgsw/hackathon/HackathonApplication.class]
+09:53:39.159 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.dgsw.hackathon.HackathonApplication for test class com.dgsw.hackathon.PaperTest
+09:53:39.262 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.dgsw.hackathon.PaperTest]: using defaults.
+09:53:39.263 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+09:53:39.282 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@182b435b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4d0402b, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2fa7ae9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7577b641, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3704122f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3153ddfc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@60afd40d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@28a2a3e7, org.springframework.test.context.event.EventPublishingTestExecutionListener@3f2049b6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@10b3df93, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@ea27e34, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@33a2499c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@e72dba7, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@33c2bd, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1dfd5f51]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2022-07-19 09:53:39.651  INFO 388815 --- [    Test worker] com.dgsw.hackathon.PaperTest             : Starting PaperTest using Java 11.0.15 on minie with PID 388815 (started by minie in /home/minie/IdeaProjects/backend)
+2022-07-19 09:53:39.654  INFO 388815 --- [    Test worker] com.dgsw.hackathon.PaperTest             : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-07-19 09:53:40.459  INFO 388815 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-19 09:53:40.505  INFO 388815 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2022-07-19 09:53:41.085  INFO 388815 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-19 09:53:41.141  INFO 388815 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-19 09:53:41.350  INFO 388815 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-19 09:53:41.467  INFO 388815 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-19 09:53:42.016  INFO 388815 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-19 09:53:42.069  INFO 388815 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-19 09:53:42.770  INFO 388815 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-19 09:53:42.778  INFO 388815 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-19 09:53:43.977  INFO 388815 --- [ null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: W3C
+2022-07-19 09:53:44.069  WARN 388815 --- [    Test worker] o.o.selenium.devtools.CdpVersionFinder   : Unable to find an exact match for CDP version 103, so returning the closest version found: a no-op implementation
+2022-07-19 09:53:44.069  INFO 388815 --- [    Test worker] o.o.selenium.devtools.CdpVersionFinder   : Unable to find CDP implementation matching 103.
+2022-07-19 09:53:44.070  WARN 388815 --- [    Test worker] o.o.selenium.chromium.ChromiumDriver     : Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2022-07-19 09:53:47.877  WARN 388815 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-19 09:53:48.593  INFO 388815 --- [    Test worker] com.dgsw.hackathon.PaperTest             : Started PaperTest in 9.27 seconds (JVM running for 10.446)
+임재청 iqpizza6349 Follow Drink Soda or Java 43 followers · 72 following @EntryCNS @CNS-DGSW Paju, Republic Of Korea https://iqpizza6349.notion.site/iqpizza6349-d1e628cda17b48eb9747328346bf2a98 Achievements x2 BetaSend feedback Highlights PRO Organizations Block or Report iqpizza6349/README.md About Me 토핑이 올려지고 있는 도우입니다. 화덕에서 구워지기 위해 노력하고 있습니다. Language Framework devOps Etc Team StarCraft Bot Club: 2021.03.12 ~ 2021.12.20 스타크래프트 인공지능 개발 동아리 dgswCNS: 2021.12.27 ~ 현재 대구소프트웨어마이스터고 입학전형시스템 개발팀 벡엔드 3기 팀원 Portfoilo | Spring &amp; Java Note | Blog Pinned I'm an early &#x1f424; 1 &#x1f31e; Morning   167 commits  █████▉░░░░░░░░░░░░░░░  28.4% 2 &#x1f306; Daytime   231 commits  ████████▏░░░░░░░░░░░░  39.2% 3 &#x1f303; Evening   141 commits  █████░░░░░░░░░░░░░░░░  23.9% 4 &#x1f319; Night      50 commits  █▊░░░░░░░░░░░░░░░░░░░   8.5% ElevenRT/Casino_Bot Public template Java 2 StudySpring Public SpringBoot를 공부하기 위해 만든 리포지토리 Java 1 deogjideogji Public &quot;간단하게 메모하자&quot;, 덕지덕지 Java 1 EntryCNS/schoolmeal-back-ng Public 대구소프트웨어고의 학생-급식소 소통 플랫폼 Java 4 Team-Newfangled/flock-back Public Java 1 906 contributions in the last year Nov Dec Jan Feb Mar Apr May Jun Jul Learn how we count contributions Less More NEW! View your contributions in 3D, VR and IRL! @EntryCNS @Team-Newfangled @ElevenRT More Activity overview Contributed to EntryCNS/schoolmeal-back-ng, iqpizza6349/Casino_Bot, iqpizza6349/StarCraft_BroodWar_BasicBot and 37 other repositories 4% Code review 5% Issues 11% Pull requests 80% Commits Contribution activity July 2022 Created 26 commits in 3 repositories iqpizza6349/Dote 22 commits Team-Newfangled/flock-back 3 commits EntryCNS/schoolmeal-back-ng 1 commit Created 1 repository iqpizza6349/Dote Java Jul 11 Opened 11 pull requests in 2 repositories iqpizza6349/Dote 9 merged Team-Newfangled/flock-back 2 merged Reviewed 6 pull requests in 1 repository EntryCNS/schoolmeal-back-ng 6 pull requests Opened 2 issues in 1 repository Team-Newfangled/flock-back 2 open [Refactor] 엔티티 리펙토링 Jul 18 [FEATURE] Team Service 구현 및 테스트 Jul 16 1 contribution in private repositories Jul 17 Show more activity Seeing something unexpected? Take a look at the GitHub profile guide.
+임재청 / NNP
+iqpizza / SL
+Follow / SL
+Drink / SL
+Soda / SL
+Java / SL
+followers / SL
+following / SL
+EntryCNS / SL
+CNS / SL
+DGSW / SL
+Paju / SL
+Republic / SL
+Korea / SL
+https / SL
+iqpizza / SL
+notion / SL
+site / SL
+iqpizza / SL
+cda / SL
+Achievements / SL
+BetaSend / SL
+feedback / SL
+Highlights / SL
+PRO / SL
+Organizations / SL
+Block / SL
+Report / SL
+iqpizza / SL
+README / SL
+.md / NNP
+About / SL
+토 핑 / NNP
+ㅂ니다 / EF
+습니다 / EF
+Language / SL
+Framework / SL
+devOps / SL
+Etc / SL
+Team / SL
+StarCraft / SL
+Bot / SL
+Club / SL
+스타크래프트 인공지능 개발 동아리 / NNP
+dgswCNS / SL
+대구 소프트웨어 마 이스 터 / NNP
+입학 전형 시스템 개발 팀 벡 엔드 / NNP
+기 팀원 / NNP
+Portfoilo / SL
+Spring / SL
+Java / SL
+Note / SL
+Blog / SL
+Pinned / SL
+early / SL
+Morning / SL
+commits / SL
+Daytime / SL
+commits / SL
+Evening / SL
+commits / SL
+Night / SL
+commits / SL
+ElevenRT / SL
+Casino / SL
+Bot / SL
+Public / SL
+template / SL
+Java / SL
+StudySpring / SL
+Public / SL
+SpringBoot / SL
+리 포지 토리 / NNP
+Java / SL
+deogjideogji / SL
+Public / SL
+덕지덕지 / MAG
+Java / SL
+EntryCNS / SL
+schoolmeal / SL
+back / SL
+Public / SL
+대구 소프트웨어 고의 학생 / NNP
+급식 소 소통 플랫폼 / NNP
+Java / SL
+Team / SL
+Newfangled / SL
+flock / SL
+back / SL
+Public / SL
+Java / SL
+contributions / SL
+the / SL
+last / SL
+year / SL
+Nov / SL
+Dec / SL
+Jan / SL
+Feb / SL
+Mar / SL
+Apr / SL
+May / SL
+Jun / SL
+Jul / SL
+Learn / SL
+how / SL
+count / SL
+contributions / SL
+Less / SL
+More / SL
+NEW / SL
+View / SL
+your / SL
+contributions / SL
+and / SL
+IRL / SL
+EntryCNS / SL
+Team / SL
+Newfangled / SL
+ElevenRT / SL
+More / SL
+Activity / SL
+overview / SL
+Contributed / SL
+EntryCNS / SL
+schoolmeal / SL
+back / SL
+iqpizza / SL
+Casino / SL
+Bot / SL
+iqpizza / SL
+StarCraft / SL
+BroodWar / SL
+BasicBot / SL
+and / SL
+other / SL
+repositories / SL
+Code / SL
+review / SL
+Issues / SL
+Pull / SL
+requests / SL
+Commits / SL
+Contribution / SL
+activity / SL
+July / SL
+Created / SL
+commits / SL
+repositories / SL
+iqpizza / SL
+Dote / SL
+commits / SL
+Team / SL
+Newfangled / SL
+flock / SL
+back / SL
+commits / SL
+EntryCNS / SL
+schoolmeal / SL
+back / SL
+commit / SL
+Created / SL
+repository / SL
+iqpizza / SL
+Dote / SL
+Java / SL
+Jul / SL
+Opened / SL
+pull / SL
+requests / SL
+repositories / SL
+iqpizza / SL
+Dote / SL
+merged / SL
+Team / SL
+Newfangled / SL
+flock / SL
+back / SL
+merged / SL
+Reviewed / SL
+pull / SL
+requests / SL
+repository / SL
+EntryCNS / SL
+schoolmeal / SL
+back / SL
+pull / SL
+requests / SL
+Opened / SL
+issues / SL
+repository / SL
+Team / SL
+Newfangled / SL
+flock / SL
+back / SL
+open / SL
+Refactor / SL
+엔 티 티 리 펙 토 링 / NNP
+Jul / SL
+FEATURE / SL
+Team / SL
+Service / SL
+테스트 / NNP
+Jul / SL
+contribution / SL
+private / SL
+repositories / SL
+Jul / SL
+Show / SL
+more / SL
+activity / SL
+Seeing / SL
+something / SL
+unexpected / SL
+Take / SL
+look / SL
+the / SL
+GitHub / SL
+profile / SL
+guide / SL
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 54201
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.1</a> at 2022. 7. 19. 오전 9:53:58</p>
+</div>
+</div>
+</body>
+</html>
