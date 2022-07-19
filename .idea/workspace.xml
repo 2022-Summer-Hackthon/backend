@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c55ef60f-151e-4eac-85e9-4cb94a5822dc" name="Changes" comment="" />
+    <list default="true" id="c55ef60f-151e-4eac-85e9-4cb94a5822dc" name="Changes" comment="프로젝트 설정" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,8 +64,16 @@
       <option name="presentableId" value="Default" />
       <updated>1658190606014</updated>
       <workItem from="1658190608110" duration="80000" />
-      <workItem from="1658190782842" duration="97000" />
+      <workItem from="1658190782842" duration="400000" />
     </task>
+    <task id="LOCAL-00001" summary="프로젝트 설정">
+      <created>1658190913645</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658190913645</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,5 +89,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="프로젝트 설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="프로젝트 설정" />
   </component>
 </project>
