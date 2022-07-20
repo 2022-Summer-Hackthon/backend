@@ -4,42 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c55ef60f-151e-4eac-85e9-4cb94a5822dc" name="Changes" comment="백업">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/entity/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/presentation/dto/response/PaperFinishedResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/presentation/dto/response/UserInfoResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/repository/UserInfoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/type/InfoType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/global/configuration/SecurityConfiguration.java" afterDir="false" />
+    <list default="true" id="c55ef60f-151e-4eac-85e9-4cb94a5822dc" name="Changes" comment="백업 2">
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/entity/Paper$PaperBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/entity/Paper$PaperBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/entity/Paper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/entity/Paper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/presentation/PaperController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/presentation/PaperController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/presentation/dto/request/PaperDraftRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/presentation/dto/request/PaperDraftRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/presentation/dto/response/CarrierResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/presentation/dto/response/CarrierResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/presentation/dto/response/PaperDraftResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/presentation/dto/response/PaperDraftResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/service/PaperService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/service/PaperService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/service/PaperServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/paper/service/PaperServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/scraper/service/ScraperService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/scraper/service/ScraperService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/scraper/service/ScraperServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/dgsw/hackathon/domain/scraper/service/ScraperServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/entity/Paper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/entity/Paper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/presentation/PaperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/presentation/PaperController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/presentation/dto/request/PaperDraftRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/presentation/dto/request/PaperDraftRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/presentation/dto/response/CarrierResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/presentation/dto/response/CarrierResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/presentation/dto/response/PaperDraftResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/presentation/dto/response/PaperDraftResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/service/PaperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/service/PaperService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/service/PaperServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/paper/service/PaperServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/scraper/service/ScraperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/scraper/service/ScraperService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/scraper/service/ScraperServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dgsw/hackathon/domain/scraper/service/ScraperServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +138,7 @@
       <updated>1658190606014</updated>
       <workItem from="1658190608110" duration="80000" />
       <workItem from="1658190782842" duration="4200000" />
-      <workItem from="1658226427361" duration="9845000" />
+      <workItem from="1658226427361" duration="11794000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 설정">
       <created>1658190913645</created>
@@ -196,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658206340199</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="백업 2">
+      <created>1658278315569</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658278315569</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +216,7 @@
     <MESSAGE value="bean 설정" />
     <MESSAGE value="예외처리 설정" />
     <MESSAGE value="백업" />
-    <option name="LAST_COMMIT_MESSAGE" value="백업" />
+    <MESSAGE value="백업 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="백업 2" />
   </component>
 </project>

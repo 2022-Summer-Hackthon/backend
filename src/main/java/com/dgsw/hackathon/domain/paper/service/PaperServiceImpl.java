@@ -148,16 +148,13 @@ public class PaperServiceImpl implements PaperService {
     }
 
     @Override
-    public PaperFinishedResponse uploadPaper(List<MultipartFile> files) {
+    public PaperFinishedResponse uploadPaper(MultipartFile front, MultipartFile behind) {
         try {
             File baseFolder = new File("papers");
             if(!baseFolder.exists()) baseFolder.mkdirs();
 
             String uid = UUID.randomUUID().toString();
-            MultipartFile front = files.get(0);
             front.transferTo(new File(baseFolder.getPath() + "/" + uid + "_front"));
-
-            MultipartFile behind = files.get(1);
             behind.transferTo(new File(baseFolder.getPath() + "/" + uid + "_behind"));
 
             return new PaperFinishedResponse(uid);

@@ -7,6 +7,7 @@ import com.dgsw.hackathon.domain.paper.presentation.dto.response.PaperFinishedRe
 import com.dgsw.hackathon.domain.paper.service.PaperService;
 import com.dgsw.hackathon.global.exception.BusinessException;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.ContentDisposition;
@@ -24,6 +25,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.UUID;
 
+@Slf4j
 @RequiredArgsConstructor
 @RequestMapping("/draft")
 @RestController
@@ -42,12 +44,13 @@ public class PaperController {
     }
 
     @PostMapping("/downloads")
-    public PaperFinishedResponse uploadPaper(List<MultipartFile> files) {
-        return paperService.uploadPaper(files);
+    public PaperFinishedResponse uploadPaper(@RequestPart("front") MultipartFile front, @RequestPart("behind") MultipartFile behind) {
+        return paperService.uploadPaper(front, behind);
     }
 
     @GetMapping("/downloads/{paper-id}/{type}")
     public ResponseEntity<Resource> getUploadedPaper(@PathVariable("paper-id") String id, @PathVariable("paper-side") String side) {
+        log.info("request about {} side of {}", side, id);
         return paperService.getUploadedPaper(id, side);
     }
 }
