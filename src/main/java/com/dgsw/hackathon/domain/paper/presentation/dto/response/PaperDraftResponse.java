@@ -11,7 +11,10 @@ public class PaperDraftResponse {
     private final String name;
 
     @JsonProperty("job_type")
-    private final String jobType;
+    private String jobType;
 
-    private final List<CarrierResponse> carriers;
+    private List<CarrierResponse> carriers;
+
+    @JsonProperty("user_info_list")
+    private List<UserInfoResponse> userInfoList;
 }

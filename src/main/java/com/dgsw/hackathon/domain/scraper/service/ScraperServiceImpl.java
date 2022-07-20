@@ -1,5 +1,7 @@
 package com.dgsw.hackathon.domain.scraper.service;
 
+import com.dgsw.hackathon.domain.paper.entity.UserInfo;
+import com.dgsw.hackathon.domain.paper.type.InfoType;
 import kr.co.shineware.nlp.komoran.core.Komoran;
 import kr.co.shineware.nlp.komoran.model.Token;
 import lombok.RequiredArgsConstructor;
@@ -11,6 +13,8 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.MatchResult;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
@@ -71,6 +75,53 @@ public class ScraperServiceImpl implements ScraperService {
         result.forEach(token -> {
             System.out.printf("%s / %s\n", token.getMorph(), token.getPos());
         });
+
+        return result;
+    }
+
+    @Override
+    public List<UserInfo> scrapTelNumbersFromCustomSite(String url) {
+        chromeDriver.get(url);
+
+        webDriverWait.until(driver -> driver.findElement(By.tagName("body")).getText().length() >= 20);
+
+        String text = chromeDriver.findElement(By.tagName("body")).getText();
+
+        List<UserInfo> result = new ArrayList<>();
+
+        // telephones
+        Pattern telephoneFinderPattern = Pattern.compile("\\d+-\\d+-\\d+");
+        Pattern telephoneExactlyPattern = Pattern.compile("\\d{2,3}-\\d{3,4}-\\d{3,4}");
+        List<UserInfo> telephones = telephoneFinderPattern.matcher(text).results().map(MatchResult::group)
+                .filter(it -> telephoneExactlyPattern.matcher(it).matches())
+                .map(it -> UserInfo.builder()
+                                .infoType(InfoType.TEL)
+                                .data(it)
+                                .build()
+                        )
+                .collect(Collectors.toList());
+        result.addAll(telephones);
+
+        // e-mail
+        Pattern emailPattern = Pattern.compile("([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\\.[a-zA-Z0-9_-]+)");
+        List<UserInfo> emails = emailPattern.matcher(text).results().map(MatchResult::group)
+                .map(it -> UserInfo.builder()
+                        .infoType(InfoType.EMAIL)
+                        .data(it)
+                        .build()
+                )
+                .collect(Collectors.toList());
+        result.addAll(emails);
+
+        Pattern githubPattern = Pattern.compile("https:\\/\\/github\\.com\\/.+");
+        List<UserInfo> githubUrls = githubPattern.matcher(text).results().map(MatchResult::group)
+                .map(it -> UserInfo.builder()
+                        .infoType(InfoType.GITHUB)
+                        .data(it)
+                        .build()
+                )
+                .collect(Collectors.toList());
+        result.addAll(githubUrls);
 
         return result;
     }

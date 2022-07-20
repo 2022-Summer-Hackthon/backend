@@ -10,4 +10,7 @@ import lombok.NoArgsConstructor;
 public class PaperDraftRequest {
     @JsonProperty("github_url")
     private String githubUrl;
+
+    @JsonProperty("custom_url")
+    private String customUrl;
 }

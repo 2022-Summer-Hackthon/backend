@@ -21,11 +21,17 @@ public class Paper {
     @Enumerated(EnumType.STRING)
     private JobCategory jobCategory;
 
-    @OneToMany(mappedBy = "paper", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "paper")
     private List<Carrier> carriers;
-
     public void addCarrier(Carrier carrier) {
         carrier.setPaper(this);
         this.carriers.add(carrier);
+    }
+
+    @OneToMany(mappedBy = "paper")
+    private List<UserInfo> userInfoList;
+    public void addUserInfo(UserInfo userInfo) {
+        userInfo.setPaper(this);
+        this.userInfoList.add(userInfo);
     }
 }

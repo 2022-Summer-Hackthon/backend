@@ -7,11 +7,11 @@ import lombok.Getter;
 
 @AllArgsConstructor @Getter
 public class CarrierResponse {
-    private final CarrierCategory category;
+    private CarrierCategory category;
 
     @JsonProperty("carrier_name")
-    private final String carrierName;
+    private String carrierName;
 
     @JsonProperty("is_progress")
-    private final boolean isProgress;
+    private boolean isProgress;
 }
